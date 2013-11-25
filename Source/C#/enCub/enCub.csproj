@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19FD0F44-2B39-41AD-BA67-CB66FF5E4D66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Salt.enCub</RootNamespace>
+    <AssemblyName>enCub</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\DLL\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="enCubAnalyzeParsing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubAnalyzeParsing.Designer.cs">
+      <DependentUpon>enCubAnalyzeParsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubConfigForm.Designer.cs">
+      <DependentUpon>enCubConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubDoc.Designer.cs">
+      <DependentUpon>enCubDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubForm.Designer.cs">
+      <DependentUpon>enCubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubAboutForm.Designer.cs">
+      <DependentUpon>enCubAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubImport.Designer.cs">
+      <DependentUpon>enCubImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubImportFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubImportFile.Designer.cs">
+      <DependentUpon>enCubImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubList.Designer.cs">
+      <DependentUpon>enCubList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubLogin.Designer.cs">
+      <DependentUpon>enCubLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubMain.Designer.cs">
+      <DependentUpon>enCubMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubMenu.Designer.cs">
+      <DependentUpon>enCubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubProject.Designer.cs">
+      <DependentUpon>enCubProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubRepositoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubRepositoryForm.Designer.cs">
+      <DependentUpon>enCubRepositoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubSolution.Designer.cs">
+      <DependentUpon>enCubSolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubTokenTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubTokenTable.Designer.cs">
+      <DependentUpon>enCubTokenTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubUserForm.Designer.cs">
+      <DependentUpon>enCubUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="enCubSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubSyntax.Designer.cs">
+      <DependentUpon>enCubSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubPLSQLCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubPLSQLCRUD.Designer.cs">
+      <DependentUpon>enCubPLSQLCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubConversionLOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubConversionLOG.Designer.cs">
+      <DependentUpon>enCubConversionLOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubJAVACRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubJAVACRUD.Designer.cs">
+      <DependentUpon>enCubJAVACRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubConversionRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubConversionRate.Designer.cs">
+      <DependentUpon>enCubConversionRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubCompareCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubCompareCRUD.Designer.cs">
+      <DependentUpon>enCubCompareCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubConversionLOGDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubConversionLOGDetail.Designer.cs">
+      <DependentUpon>enCubConversionLOGDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubDisplayParsing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubDisplayParsing.Designer.cs">
+      <DependentUpon>enCubDisplayParsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubExport.Designer.cs">
+      <DependentUpon>enCubExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enCubTargetDBMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enCubTargetDBMSForm.Designer.cs">
+      <DependentUpon>enCubTargetDBMSForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="enCubAnalyzeParsing.resx">
+      <DependentUpon>enCubAnalyzeParsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubConfigForm.resx">
+      <DependentUpon>enCubConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubDoc.resx">
+      <DependentUpon>enCubDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubForm.resx">
+      <DependentUpon>enCubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubAboutForm.resx">
+      <DependentUpon>enCubAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubImport.resx">
+      <DependentUpon>enCubImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubImportFile.resx">
+      <DependentUpon>enCubImportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubList.resx">
+      <DependentUpon>enCubList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubLogin.resx">
+      <DependentUpon>enCubLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubMain.resx">
+      <DependentUpon>enCubMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubMenu.resx">
+      <DependentUpon>enCubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubProject.resx">
+      <DependentUpon>enCubProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubRepositoryForm.resx">
+      <DependentUpon>enCubRepositoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubSolution.resx">
+      <DependentUpon>enCubSolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubTokenTable.resx">
+      <DependentUpon>enCubTokenTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubUserForm.resx">
+      <DependentUpon>enCubUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="enCubSyntax.resx">
+      <DependentUpon>enCubSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubPLSQLCRUD.resx">
+      <DependentUpon>enCubPLSQLCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubConversionLOG.resx">
+      <DependentUpon>enCubConversionLOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubJAVACRUD.resx">
+      <DependentUpon>enCubJAVACRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubConversionRate.resx">
+      <DependentUpon>enCubConversionRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubCompareCRUD.resx">
+      <DependentUpon>enCubCompareCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubConversionLOGDetail.resx">
+      <DependentUpon>enCubConversionLOGDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubDisplayParsing.resx">
+      <DependentUpon>enCubDisplayParsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubExport.resx">
+      <DependentUpon>enCubExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enCubTargetDBMSForm.resx">
+      <DependentUpon>enCubTargetDBMSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Config\Config.csproj">
+      <Project>{3C85A566-1B07-4A23-BB75-A1B58CF71974}</Project>
+      <Name>Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Delegate\Delegate.csproj">
+      <Project>{3FBCC268-9DB3-429E-AF3A-75C82AA070FF}</Project>
+      <Name>Delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{6ADD7FC6-C57D-4295-837C-C0353F3AF688}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saltware_logo.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
